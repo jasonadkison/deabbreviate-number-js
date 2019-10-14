@@ -1,0 +1,32 @@
+{
+  "name": "deabbreviate-number",
+  "version": "1.0.0",
+  "description": "Deabbreviates a number string and remove unit letters e.g. '3.5m' => 3500000",
+  "author": "Jason Adkison <jadkison@gmail.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonadkison/deabbreviate-number-js.git"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/_mocha -- -R spec -r should test.js",
+    "prepublish": "npm test && npm prune"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "keywords": [
+    "number",
+    "number-deabbreviate",
+    "deabbreviate",
+    "abbreviate"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.10.2",
+    "mocha": "^6.2.1",
+    "should": "^13.2.3"
+  }
+}
